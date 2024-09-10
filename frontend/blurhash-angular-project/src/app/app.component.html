@@ -1,0 +1,22 @@
+<ng-container [ngSwitch]="status">
+  <div *ngSwitchDefault class="flex items-center justify-center text-center text-lg">Loading...</div>
+  
+  <ng-container *ngSwitchCase="'Error'">
+    <div *ngSwitchDefault class="flex items-center justify-center text-center text-lg">Something went wrong, please try again </div>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="'Loaded'">
+    <div class="columns-2 md:columns-4 gap-4 space-y-4 p-4">
+      <div class="w-full h-full" *ngFor="let item of apiData.uploadedImages">
+        <ngx-blurhash-render
+          [blurHash]="item.blurHash"
+          [imageSrc]="item.url"
+          [width]="'100%'"
+          [height]="'100%'"
+          [borderRadius]="'12px'"
+        >
+        </ngx-blurhash-render>
+      </div>
+    </div>
+  </ng-container>
+</ng-container>

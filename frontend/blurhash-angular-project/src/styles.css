@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body > app-root > div > div > div > ngx-blurhash-render > canvas {
+    position: unset !important;
+}
+
+
+body > app-root > div > div > ngx-blurhash-render > img {
+    position: unset !important;
+}
