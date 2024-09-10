@@ -4,13 +4,13 @@ A demo project showcasing the usage of [Blurhash](https://blurha.sh/) for image 
 
 ## Demo
 
-React
-
-![Watch the video](https://imgur.com/htAiqQc.gif)
-
 Angular
 
 ![Watch the video](https://imgur.com/UqX1MEW.gif)
+
+React
+
+![Watch the video](https://imgur.com/htAiqQc.gif)
 
 Swagger
 
