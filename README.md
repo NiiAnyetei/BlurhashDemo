@@ -3,7 +3,7 @@
 A demo project showcasing the usage of [Blurhash](https://blurha.sh/) for image placeholders in both React and Angular frontend applications, with an ASP.NET Core backend for generating Blurhash strings from uploaded images.
 
 ## Demo
-![Watch the video](https://imgur.com/mEw2mLa.gif)
+![Watch the video](https://imgur.com/ACspf1w.gif)
 
 [//]: <!-- Swagger -->
 
