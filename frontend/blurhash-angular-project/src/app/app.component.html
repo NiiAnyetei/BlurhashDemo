@@ -6,7 +6,11 @@
   </ng-container>
 
   <ng-container *ngSwitchCase="'Loaded'">
-    <div class="columns-2 md:columns-4 gap-4 space-y-4 p-4">
+    <ng-template #noData>
+      <div class="flex items-center justify-center text-center text-lg">No data</div>
+    </ng-template>
+    
+    <div class="columns-2 md:columns-4 gap-4 space-y-4 p-4" *ngIf="apiData.uploadedImages.length;else noData">
       <div class="w-full h-full" *ngFor="let item of apiData.uploadedImages">
         <ngx-blurhash-render
           [blurHash]="item.blurHash"

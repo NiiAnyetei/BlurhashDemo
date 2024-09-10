@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { OptimizedImage } from './components/optimizedImage';
 import { ApiData } from './models';
 
-const apiUrl = "https://localhost:7273/api/Images";
+const apiUrl = "https://localhost:5001/api/Images";
 
 function App() {
   const [apiData, setApiData] = useState<ApiData | null>(null);
@@ -28,14 +28,20 @@ function App() {
   return (
     <>
       {apiData ? (
-        <div className="columns-2 md:columns-4 gap-4 space-y-4 p-4">
-          {apiData.uploadedImages.map((item) => (
-            <div key={item.id}>
-              <OptimizedImage image={item} />
-            </div>
-          ))}
-        </div>
-      ) : (
+        apiData.uploadedImages.length ? (
+          <div className="columns-2 md:columns-4 gap-4 space-y-4 p-4">
+                {apiData.uploadedImages.map((item) => (
+                  <div key={item.id}>
+                    <OptimizedImage image={item} />
+                  </div>
+                ))}
+          </div>
+        ) :
+        (
+          <div className="flex items-center justify-center text-center text-lg">No data</div>
+        )
+      )
+      : (
         <div className="flex items-center justify-center text-center text-lg">Loading...</div>
       )}
     </>

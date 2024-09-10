@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ApiData } from 'src/models/models';
 
-const apiUrl = "https://localhost:7273/api/Images";
+const apiUrl = "https://localhost:5001/api/Images";
 
 type LoadingState = "Loading" | "Loaded" | "Error";
 

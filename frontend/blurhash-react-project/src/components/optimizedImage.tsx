@@ -28,13 +28,10 @@ function OptimizedImage(props: IOptimizedImageProps) {
     const [isLoadStarted, setLoadStarted] = useState(false);
 
     const handleLoad = () => {
-        setTimeout(() => {
-            setLoaded(true);
-        }, 2000);
+        setLoaded(true);
     };
 
     const handleLoadStarted = () => {
-        console.log("Started: ");
         setLoadStarted(true);
     };
 
