@@ -2,6 +2,19 @@
 
 A demo project showcasing the usage of [Blurhash](https://blurha.sh/) for image placeholders in both React and Angular frontend applications, with an ASP.NET Core backend for generating Blurhash strings from uploaded images.
 
+## Demo
+Swagger
+
+![Watch the video](https://imgur.com/5s7iWdE.png)
+
+React
+
+![Watch the video](https://imgur.com/htAiqQc.gif)
+
+Angular
+
+![Watch the video](https://imgur.com/UqX1MEW.gif)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -150,8 +163,19 @@ Gets all images.
 ## Examples
 
 1. Start the backend (`https://localhost:5001`).
+
 2. Navigate to `https://localhost:5001/swagger`
+
+![Watch the video](https://imgur.com/5s7iWdE.png)
+
 3. Upload an image on swagger (`POST /api/Images`).
 4. Run either the React (`http://localhost:3000`) or Angular (`http://localhost:4200`) frontend and see the Blurhash placeholder displayed while the image loads.
 
+React
+
+![Watch the video](https://imgur.com/htAiqQc.gif)
+
+Angular
+
+![Watch the video](https://imgur.com/UqX1MEW.gif)
 ## 
