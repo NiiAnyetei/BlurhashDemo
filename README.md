@@ -130,10 +130,7 @@ Uploads an image/multiple images and returns 200.
 
 Gets all images.
 
-- **Params**: 
-`Limit` Limit number of articles (default is 20).
-
-`Offset` Offset/skip number of articles (default is 0).
+- **Params**: `Limit` Limit number of articles (default is 20). `Offset` Offset/skip number of articles (default is 0).
 
 - **Response**:
 
