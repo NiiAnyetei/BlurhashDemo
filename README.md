@@ -7,11 +7,11 @@ Swagger
 
 ![Watch the video](https://imgur.com/5s7iWdE.png)
 
-React
+[//]: <!-- React -->
 
-![Watch the video](https://imgur.com/htAiqQc.gif)
+[//]: <!-- ![Watch the video](https://imgur.com/htAiqQc.gif) -->
 
-Angular
+[//]: <!-- Angular -->
 
 ![Watch the video](https://imgur.com/mEw2mLa.gif)
 
